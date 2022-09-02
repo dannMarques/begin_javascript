@@ -43,7 +43,6 @@ function todosDadosDoPaciente(indice) {
 }
 //===================================================>
 
-
 function validaAltura(altura){
 
   if (altura >= 0 && altura < 3) {
@@ -51,26 +50,21 @@ function validaAltura(altura){
   } else {
     return false;
   }
-
-    // averiguaAltura = false;
-    // tdImc.textContent = 'Altura inválida';
-    // paciente.classList.add('paciente-invalido');
 }
 
 function validaPeso(peso){
-  if (peso >= 0 && peso < 500) {
+  if (peso > 0 && peso < 500) {
     return true;
   } else {
     return false;
   }
-  // tdImc.textContent = 'Peso inválido';
-  // paciente.classList.add('paciente-invalido');
 }
 
 function validaDados(pesoEhValido, alturaEhValida) {
   if (pesoEhValido && alturaEhValida) {
     mostraImc(peso, altura);
-
+  }
+}
 
 function calculaImc(peso,altura) {
   var imc = 0;
@@ -82,6 +76,3 @@ function mostraImc(peso,altura) {
   tdImc.textContent = calculaImc(peso,altura);
   return calculaImc(peso,altura);
 }
-
-
-

@@ -1,3 +1,7 @@
+# Name: EditorConfig for VS Code
+# Id: EditorConfig.EditorConfig
+#Version: 0.16.4
+
 # top-most EditorConfig file
 root = true
 
